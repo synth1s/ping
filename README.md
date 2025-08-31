@@ -23,10 +23,21 @@ ping/
 
 ## Instalação
 
+### Opção 1: GitHub (Público)
 ```bash
 # Clone o repositório
 git clone git@github.com:synth1s/ping.git
 cd ping
+
+# Execute o aplicativo
+python ping.py
+```
+
+### Opção 2: Azure DevOps (Privado)
+```bash
+# Clone o repositório
+git clone git@ssh.dev.azure.com:v3/RDOr-Corp/RDOr-Inovacao/regua3-sync-engine
+cd regua3-sync-engine
 
 # Execute o aplicativo
 python ping.py
@@ -52,6 +63,18 @@ print(result2)  # "ping"
 
 ```bash
 ping-app
+```
+
+## Instalação via pip
+
+### GitHub (Público)
+```bash
+pip install git+https://github.com/synth1s/ping.git
+```
+
+### Azure DevOps (Privado)
+```bash
+pip install git+ssh://git@ssh.dev.azure.com/v3/RDOr-Corp/RDOr-Inovacao/regua3-sync-engine
 ```
 
 ## Testes
