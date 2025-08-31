@@ -6,6 +6,14 @@ Um aplicativo Python simples que implementa funcionalidades básicas de ping/pon
 
 - `ping()` → retorna "pong"
 - `pong()` → retorna "ping"
+- `mirror(enabled)` → habilita/desabilita modo mirror
+- `is_mirror_enabled()` → verifica se modo mirror está ativo
+
+### Modo Mirror
+
+Quando o modo mirror está habilitado:
+- `ping()` → retorna "ping"
+- `pong()` → retorna "pong"
 
 ## Estrutura do Projeto
 
@@ -57,6 +65,19 @@ result2 = service.pong()  # Retorna "ping"
 
 print(result1)  # "pong"
 print(result2)  # "ping"
+
+# Habilitar modo mirror
+service.mirror(True)
+print(service.ping())  # "ping"
+print(service.pong())  # "pong"
+
+# Verificar se mirror está ativo
+print(service.is_mirror_enabled())  # True
+
+# Desabilitar modo mirror
+service.mirror(False)
+print(service.ping())  # "pong"
+print(service.pong())  # "ping"
 ```
 
 ### Ou usando o comando CLI:
