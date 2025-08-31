@@ -23,7 +23,7 @@ setup(
     name="ping-app",
     version=get_version(),
     author="synth1s",
-    author_email="your.email@example.com",
+    author_email="filipe@synth1s.com.br",
     description="Um aplicativo Python simples que implementa funcionalidades básicas de ping/pong",
     long_description=read_readme(),
     long_description_content_type="text/markdown",
