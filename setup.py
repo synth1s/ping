@@ -28,8 +28,8 @@ setup(
     long_description=read_readme(),
     long_description_content_type="text/markdown",
     url="https://github.com/synth1s/ping",
-    packages=find_packages(where="src"),
-    package_dir={"": "src"},
+    packages=["ping_app"],
+    package_dir={"ping_app": "src"},
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
@@ -56,7 +56,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "ping-app=src.core:main",
+            "ping-app=ping_app.core:main",
         ],
     },
     include_package_data=True,

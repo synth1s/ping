@@ -35,7 +35,7 @@ python ping.py
 ## Uso
 
 ```python
-from src.core import PingService
+from ping_app.core import PingService
 
 # Criar instância do serviço
 service = PingService("MyPingService")
@@ -46,6 +46,12 @@ result2 = service.pong()  # Retorna "ping"
 
 print(result1)  # "pong"
 print(result2)  # "ping"
+```
+
+### Ou usando o comando CLI:
+
+```bash
+ping-app
 ```
 
 ## Testes
